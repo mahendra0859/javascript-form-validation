@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <form action='/' method="GET" id="form">
+        <h1>Javascript Form Validation</h1>
+        <hr /><br /><br />
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+            <div id="name-error"></div>
+        </div>
+        <div>
+            <label for=" password">Password: </label>
+            <input type="password" name="password" id="password" required minlength="6" maxlength="10">
+            <div id="password-error"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
