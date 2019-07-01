@@ -11,20 +11,118 @@
 </head>
 
 <body>
-    <form action='/' method="GET" id="form">
+    <form action='/' method="GET" id="form" enctype="multipart/form-data">
         <h1>Javascript Form Validation</h1>
         <hr /><br /><br />
         <div>
             <label for="name">Name: </label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" value="user name">
             <div id="name-error"></div>
         </div>
         <div>
-            <label for=" password">Password: </label>
-            <input type="password" name="password" id="password" required minlength="6" maxlength="10">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="age" min="1" max="200" step="5">
+        </div>
+        <div>
+            <label for="date">Birth Date:</label>
+            <input type="date" name="date" id="date" min="2019-06-10">
+        </div>
+        Favourite food
+        <div class="checkbox-div">
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="apple">Apple</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+        Gender
+        <div class="radio-div">
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+        </div>
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="green">Green</option>
+                <option value="red" label="Red"></option>
+            </select>
+        </div>
+        <div>
+            <label for="eyeBrowColor">Eye Brow Color</label>
+            <select name="eyeBrowColor" id="eyeBrowColor" multiple>
+                <option value="green">Green</option>
+                <option value="red" label="Red"></option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10">My name is mahendra</textarea>
+        </div>
+        <div>
+            <input type="hidden" name="hidden" value="hi">
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="datetime">Date Time</label>
+            <input type="datetime" name="datetime" id="datetime">
+        </div>
+        <div>
+            <label for="datetime-local">Date Time Local</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+        </div>
+        <div>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range">
+        </div>
+        <div>
+            <label for="search">Serach</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <div>
+            <label for="week">Week</label>
+            <input type="week" name="week" id="week">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" minlength="6" maxlength="10" placeholder="Password">
             <div id="password-error"></div>
         </div>
-        <button type="submit">Submit</button>
+        <div class="button-div">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </body>
 

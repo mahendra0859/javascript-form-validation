@@ -9,7 +9,8 @@ body {
   width: 100vw;
   font-size: 28px;
 }
-form {
+form,
+.results {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -20,9 +21,25 @@ form input {
   font-size: 22px;
 }
 form button {
-  margin-top: 30px;
+  margin: 30px;
   font-size: 32px;
+  width: 50%;
 }
 form div {
   display: grid;
+}
+.button-div,
+.checkbox-div,
+.checkbox-div div,
+.radio-div,
+.radio-div div {
+  display: flex;
+}
+.checkbox-div div,
+.radio-div div {
+  padding: 20px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 80px;
 }
